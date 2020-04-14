@@ -15,7 +15,7 @@ class Sobel:
     def convertToGray(self, image):
         return np.dot(image[:,:,:3], [0.299, 0.587, 0.114])
     
-    # A method for kernel convolution with an image 
+    # Convole a kernel with an image 
     def convole(self, image, kernel):
         (i_height, i_width) = image.shape[:2]
         (k_height, k_width) = kernel.shape[:2]
